@@ -7,7 +7,7 @@ const Navbar = () => {
 
 	return (
 		<header>
-			<nav className="w-full fixed top-0 left-0 bg-black/70  py-4 px-4 lg:px-10 xl:px-12 z-100 flex justify-between items-center border border-b-gray-700">
+			<nav className="w-full fixed top-0 left-0 bg-black/50  py-4 px-4 lg:px-10 xl:px-12 z-100 flex justify-between items-center  border-b-gray-700">
 				<div>
 					<h1 className="font-bold text-2xl md:text-3xl text-white">NexFund</h1>
 				</div>
