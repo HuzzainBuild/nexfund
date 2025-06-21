@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+html,
+body {
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.nav_links {
+  @apply cursor-pointer font-semibold text-gray-400 hover:text-white transition duration-700;
+}
+
+.gradient-01 {
+  position: absolute;
+  width: 200px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+
+  background-image: linear-gradient(
+    270deg,
+    hsl(295deg 76% 51%) 0%,
+    hsl(284deg 70% 73%) 26%,
+    hsl(257deg 70% 86%) 39%,
+    hsl(202deg 92% 90%) 50%,
+    hsl(215deg 77% 81%) 61%,
+    hsl(221deg 73% 70%) 74%,
+    b hsl(220deg 76% 51%) 100%
+  );
+  filter: blur(125px);
+}
+
+.gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gradient-03 {
+  position: absolute;
+  width: 404px;
+  height: 800px;
+  left: 50%;
+  top: -15%;
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    rgba(149, 66, 232, 0.35),
+    rgba(45, 37, 158, 0.35)
+  );
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+}
+
+.gradient-04 {
+  position: absolute;
+  width: 304px;
+  height: 100vh;
+  left: 2%;
+  top: 10%;
+
+  background: rgba(45, 72, 152, 0.75);
+  filter: blur(200px);
+  transform: rotate(-53.13deg);
+}
+
+.gradient-05 {
+  position: absolute;
+  width: 304px;
+  height: 100vh;
+  right: 2%;
+  bottom: 5%;
+
+  background: rgba(91, 45, 152, 0.75);
+  filter: blur(200px);
+  transform: rotate(-53.13deg);
+}
+
+.start {
+  @apply py-1 px-2 bg-gray-800 border border-gray-400 text-white rounded-full text-xs md:text-sm;
+}
+
+p {
+  @apply text-gray-400;
+}
+
+.gradient {
+  @apply bg-radial-[at_50%_35%] from-[#131114] from-65% to-[#301244];
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+}
+
+.orbit_out {
+  animation: clockwise 10s linear infinite;
+}
+
+.orbit_in {
+  animation: anticlockwise 10s linear infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anticlockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.launchpads {
+  @apply bg-[#1a1a1a] py-2 px-4 rounded-lg shadow-lg text-white border border-gray-600 hover:bg-gray-600 hover:text-white font-semibold transition duration-700 ease-in-out hover:border-white hover:font-semibold;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+.grad-bg {
+  @apply bg-linear-0 from-[#0d090f] from-20% to-[#070618];
+}
+
+.scroll_slide {
+  animation: slideAnimation 20s linear infinite;
+}
+
+.scroll_slide:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideAnimation {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.gradient_text {
+  @apply bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent;
+}
+
+.gradient_bg {
+  @apply bg-gradient-to-r from-purple-500 to-blue-500;
+}
