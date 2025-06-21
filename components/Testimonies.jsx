@@ -2,6 +2,7 @@
 
 import { motion as m } from "framer-motion";
 import { zoomIn, fadeIn, textVariant } from "@/utils/motion";
+import Button from "./Button";
 
 const Testimonies = () => {
   return (
@@ -22,9 +23,7 @@ const Testimonies = () => {
           listings through a trusted network
         </p>
         <div className="mt-6">
-          <button className="bg-gray-300 text-black py-3 px-5 w-full md:flex-1/3 cursor-pointer rounded-md font-semibold hover:bg-white transition-all duration-700 hero_btn">
-            Get Started
-          </button>
+          <Button type={"btn"} title={"Get Started"} />
         </div>
       </m.div>
     </section>

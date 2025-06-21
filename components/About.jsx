@@ -32,7 +32,7 @@ const About = () => {
         </m.h1>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-4 md:gap-5 md:max-w-[70rem] w-full mx-auto grad-bg mt-8">
+      <div className="grid md:grid-cols-4 gap-4 md:gap-5 md:max-w-[70rem] w-full mx-auto mt-8">
         {/* WHO WE ARE */}
         <m.div
           variants={fadeIn("right", "tween", 0.1, 0.5)}

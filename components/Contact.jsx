@@ -6,6 +6,7 @@ import { motion as m } from "motion/react";
 import { fadeIn, zoomIn } from "@/utils/motion";
 import Input from "./Input";
 import { generateMessage } from "@/utils/constant";
+import Button from "./Button";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -149,13 +150,11 @@ const Contact = () => {
         </div>
 
         <div className="mt-6 flex w-full">
-          <button
-            onClick={handleSubmit}
-            type="submit"
-            className="bg-gray-400 text-black py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md hover:bg-white transition duration-700 w-full md:w-auto"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <Button
+            type={"btn"}
+            title={loading ? "Sending..." : "Send"}
+            handleClick={handleSubmit}
+          />
         </div>
       </m.div>
     </section>

@@ -5,6 +5,7 @@ import CanvasVideo from "./CanvasVideo";
 
 import { motion as m } from "motion/react";
 import { fadeIn, textVariant } from "@/utils/motion";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -38,8 +39,10 @@ const Hero = () => {
           viewport={{ once: false, amount: 0.25 }}
           className="text-3xl md:text-5xl font-bold hero_title"
         >
-          Accelerating the Future of Web3 — Capital, Connections, and
-          Credibility.
+          Accelerating the Future of{" "}
+          <span className="gradient_text">
+            Web3 — Capital, Connections, and Credibility.
+          </span>
         </m.h1>
         <m.p
           variants={textVariant(0.5)}
@@ -52,17 +55,15 @@ const Hero = () => {
           deals, and achieve successful listings — backed by our exclusive
           network and strategic ecosystem partnerships.
         </m.p>
-        <div className="mt-6">
-          <m.button
-            variants={fadeIn("up", "tween", 0.1, 0.5)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
-            className="bg-gray-300 text-black font-bold px-8 py-3 rounded-lg hover:bg-white duration-700 text-lg md:text-xl hero_btn"
-          >
-            Get Started
-          </m.button>
-        </div>
+        <m.div
+          variants={fadeIn("up", "tween", 0.1, 0.5)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="mt-6"
+        >
+          <Button type={"btn"} title={"Get Started"} />
+        </m.div>
       </div>
     </section>
   );

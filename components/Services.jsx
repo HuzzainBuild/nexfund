@@ -57,9 +57,9 @@ const Services = () => {
           {servicesData.map((service, index) => (
             <Tilt
               key={index}
-              tiltMaxAngleX={15}
-              tiltMaxAngleY={15}
-              scale={1}
+              tiltMaxAngleX={5}
+              tiltMaxAngleY={5}
+              scale={0.9}
               transitionSpeed={450}
             >
               <m.div
