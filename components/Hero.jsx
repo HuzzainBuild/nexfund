@@ -72,7 +72,7 @@ const Hero = () => {
 
       <div
         style={{ width: "600px", height: "600px" }}
-        className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-0"
+        className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-0 bg-black"
       >
         <Orb
           hoverIntensity={0.5}
