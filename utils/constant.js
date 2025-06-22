@@ -87,8 +87,8 @@ export const servicesData = [
   {
     title: "KOL & Influencer Marketing",
     text: "Boost your project visibility with curated Key Opinion Leader (KOL) campaigns. We activate crypto influencers and media channels for strategic, ROI-focused marketing.",
-    image: "/king.png",
-    sm: "/king-sm.png",
+    image: "/kol.png",
+    sm: "/kol-sm.png",
     reverse: false,
   },
   {
