@@ -23,6 +23,7 @@ const Project = () => {
   return (
     <section
       ref={scrollref}
+      id="project"
       className="relative w-full px-4 md:px-8 lex items-center justify-center py-[50px] md:py-[80px] h-[120vh] md:h-[200vh]"
     >
       <div

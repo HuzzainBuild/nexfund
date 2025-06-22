@@ -79,7 +79,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative w-full py-[100px] max-sm:pt-[50px] px-4 overflow-hidden">
+    <section
+      id="contact"
+      className="relative w-full py-[100px] max-sm:pt-[50px] px-4 overflow-hidden"
+    >
       <m.h1
         variants={fadeIn("right", "tween", 0.1, 0.75)}
         initial="hidden"

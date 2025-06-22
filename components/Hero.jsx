@@ -6,14 +6,18 @@ import CanvasVideo from "./CanvasVideo";
 import { motion as m } from "motion/react";
 import { fadeIn, textVariant } from "@/utils/motion";
 import Button from "./Button";
+import Orb from "./Orb";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen overflow-hidden flex items-center justify-center text-white z-10 hero-wrapper">
+    <section
+      id="hero"
+      className="relative w-full h-screen overflow-hidden flex items-center justify-center text-white z-10 hero-wrapper"
+    >
       <CanvasVideo videoSrc="/videos/galaxy.mp4" className="-z-1" />
 
       <section className="absolute top-0 left-0 w-full h-screen inset-0 flex items-center justify-center z-0">
-        <div className="max-w-[500px] max-h-[500px]">
+        {/* <div className="max-w-[500px] max-h-[500px]">
           <Image
             src={"/outorbit.png"}
             alt="Out Orbit"
@@ -28,7 +32,7 @@ const Hero = () => {
             height={300}
             className="orbit_in absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blend-luminosity"
           />
-        </div>
+        </div> */}
       </section>
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -64,6 +68,18 @@ const Hero = () => {
         >
           <Button type={"btn"} title={"Get Started"} />
         </m.div>
+      </div>
+
+      <div
+        style={{ width: "600px", height: "600px" }}
+        className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-0"
+      >
+        <Orb
+          hoverIntensity={0.5}
+          rotateOnHover={true}
+          hue={0}
+          forceHoverState={false}
+        />
       </div>
     </section>
   );

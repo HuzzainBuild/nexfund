@@ -16,13 +16,13 @@ const Rating = () => {
           viewport={{ once: true, amount: 0.25 }}
           className="text-2xl md:text-3xl font-bold text-white"
         >
-          Trusted By 50+ <span>Happy Customers</span>
+          Trusted By 50+ <span className="gradient_text">Happy Customers</span>
         </m.h1>
         <m.p
           variants={textVariant(0.5)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.25 }}
           className="text-gray-400 text-center max-w-2xl"
         >
           Just step away from those traditional old methods of hiring plus

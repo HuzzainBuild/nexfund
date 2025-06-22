@@ -1,25 +1,18 @@
 "use client";
 
-import { useRef } from "react";
 import Image from "next/image";
-import { motion as m, useTransform, useScroll } from "framer-motion";
+import { motion as m } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
 import { fadeIn, zoomIn } from "@/utils/motion";
 import { servicesData } from "@/utils/constant";
 
 const Services = () => {
-  // const scrollRef = useRef(null);
-
-  // const { scrollYProgress } = useScroll({
-  //   target: scrollRef,
-  //   offset: ["start start", "end end"],
-  // });
-
-  // const y = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
-
   return (
-    <section className="relative w-full py-[50px] md:py-[80px] px-4 md:px-8 bg-black overflow-hidden">
+    <section
+      id="services"
+      className="relative w-full py-[50px] md:py-[80px] px-4 md:px-8 bg-black overflow-hidden"
+    >
       <div className="flex flex-col items-center justify-center gap-2 md:gap-4 text-center">
         <m.p
           variants={zoomIn(0.1, 0.5)}

@@ -19,7 +19,10 @@ const partners = [
 
 const Partnership = () => {
   return (
-    <section className="bg-black py-10 md:py-16 text-white overflow-hidden relative">
+    <section
+      id="partner"
+      className="bg-black py-10 md:py-16 text-white overflow-hidden relative"
+    >
       <div className="flex flex-col items-center space-y-4">
         <div className="flex flex-col gap-4 items-center text-center">
           <m.p

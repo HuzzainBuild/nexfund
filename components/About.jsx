@@ -7,7 +7,10 @@ import { zoomIn, fadeIn, textVariant } from "@/utils/motion";
 
 const About = () => {
   return (
-    <section className="w-full py-[50px] md:py-[100px] px-5 md:px-8 flex flex-col items-center justify-center gap-4 md:gap-6 relative overflow-x-hidden">
+    <section
+      id="about"
+      className="w-full py-[50px] md:py-[100px] px-5 md:px-8 flex flex-col items-center justify-center gap-4 md:gap-6 relative overflow-x-hidden"
+    >
       <div className="gradient-03 z-0"></div>
 
       <div className="w-full flex flex-col gap-6 items-center justify-center text-center">

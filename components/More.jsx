@@ -7,7 +7,10 @@ import { Features } from "@/utils/constant";
 
 const More = () => {
   return (
-    <section className="relative w-full flex flex-col items-center justify-center py-[30px] md:py-[60px] overflow-x-hidden">
+    <section
+      id="features"
+      className="relative w-full flex flex-col items-center justify-center py-[30px] md:py-[60px] overflow-x-hidden"
+    >
       <div className="flex flex-col gap-4 items-center text-center">
         <m.p
           variants={zoomIn(0.1, 0.5)}

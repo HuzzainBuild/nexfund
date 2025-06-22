@@ -7,6 +7,10 @@ import { useState } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header>
       <nav className="w-full fixed top-0 left-0 bg-black/50  py-4 px-4 lg:px-10 xl:px-12 z-100 flex justify-between items-center  border-b-gray-700">
@@ -15,25 +19,32 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex gap-5 lg:gap-6 xl:gap-8 item-center  font-medium text-white">
-          <li className="cursor-pointer font-semibold text-gray-400 hover:text-white transition duration-700">
-            Home
+          <li className="nav_links">
+            <a href="#hero">Home</a>
           </li>
-          <li className="cursor-pointer font-semibold text-gray-400 hover:text-white transition duration-700">
-            Web-3 Service
+          <li className="nav_links">
+            <a href="#services">Web-3 Service</a>
           </li>
-          <li className="cursor-pointer font-semibold text-gray-400 hover:text-white transition duration-700">
-            About
+          <li className="nav_links">
+            <a href="#features">Features</a>
           </li>
-          <li className="cursor-pointer font-semibold text-gray-400 hover:text-white transition duration-700">
-            Contact
+          <li className="nav_links">
+            <a href="#about">About</a>
+          </li>
+          <li className="nav_links">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
 
-        <Button type={"btn"} title={"Get Started"} />
+        <Button
+          type={"btn"}
+          title={"Get Started"}
+          className={"hidden md:flex"}
+        />
 
         <div
           className="md:hidden flex items-center justify-center cursor-pointer"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={handleClick}
         >
           {isOpen ? (
             <svg
@@ -69,19 +80,35 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {isOpen && (
-        <section className="fixed z-40 top-0 left-0 w-full h-screen bg-black/20 backdrop-blur-xl transition-all duration-700 ease-in-out"></section>
-      )}
-      {isOpen && (
-        <section className="absolute z-40 top-[100px] text-2xl font-semibold transition-all duration-700 ease-in-out w-full flex justify-center">
-          <ul className="text-center flex flex-col gap-6 uppercase">
-            <li className="nav_links">Home</li>
-            <li className="nav_links">Web-3 Service</li>
-            <li className="nav_links">About</li>
-            <li className="nav_links">Contact</li>
-          </ul>
-        </section>
-      )}
+      <section
+        className={`fixed z-40 top-0  ${
+          isOpen ? "left-0 w-full block" : "-left-[100%] w-0 hidden"
+        } h-screen bg-black/20 backdrop-blur-xl transition-all duration-700 ease-in-out`}
+      ></section>
+
+      <section
+        className={`fixed z-50 top-[100px] left-0 ${
+          isOpen ? "left-0 w-full" : "-left-[100%] w-0 hidden"
+        } text-2xl font-semibold transition-all duration-700 ease-in-out w-full flex px-4 md:hidden`}
+      >
+        <ul className="flex flex-col gap-6 ">
+          <li onClick={handleClick} className="nav_links">
+            <a href="#hero">Home</a>
+          </li>
+          <li onClick={handleClick} className="nav_links">
+            <a href="#services">Web-3 Service</a>
+          </li>
+          <li onClick={handleClick} className="nav_links">
+            <a href="#features">Features</a>
+          </li>
+          <li onClick={handleClick} className="nav_links">
+            <a href="#about">About</a>
+          </li>
+          <li onClick={handleClick} className="nav_links">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </section>
     </header>
   );
 };
