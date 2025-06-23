@@ -148,7 +148,7 @@ const Partner = () => {
       <div className="flex flex-col gap-10 item-center justify-center overflow-hidden max-w-[70rem] w-full">
         {/* Tab buttons */}
         <div className="w-full flex items-center justify-center">
-          <div className="grad-bg py-4 px-3 md:px-4 border border-gray-800 rounded-md md:rounded-full w-full flex items-center gap-6 md:gap-8 font-semibold flex-wrap justify-center md:w-auto ">
+          <div className="grad-bg py-4 px-3 md:px-4 border border-gray-800 rounded-md md:rounded-full w-full flex items-center gap-4 md:gap-8 font-semibold flex-wrap justify-center md:w-auto ">
             {Object.keys(partnerCategories).map((label, idx) => (
               <label key={idx} className="cursor-pointer relative">
                 <input
@@ -168,7 +168,7 @@ const Partner = () => {
         </div>
 
         {/* Partner logos based on selected tab */}
-        <div className="flex gap-8 items-center justify-center w-full scroll_slide bg-amber-950">
+        <div className="flex gap-8 items-center justify-center w-full scroll_slide">
           {partnerCategories[selectedCategory].map((src, i) => (
             <Image
               key={i}

@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import Partnership from "@/components/Partnership";
 import About from "@/components/About";
@@ -11,8 +13,23 @@ import Contact from "@/components/Contact";
 import Rating from "@/components/Rating";
 import Partner from "@/components/Partner";
 import Work from "@/components/Work";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 const Home = () => {
+  useEffect(() => {
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <>
       <Hero />
@@ -20,7 +37,7 @@ const Home = () => {
       <Partner />
       <Launchpad />
       <About />
-      <Project />
+      {/* <Project /> */}
       <Services />
       <Work />
       <More />

@@ -1,5 +1,5 @@
 import {
-  LinkIcon,
+  PresentationChartLineIcon,
   BoltIcon,
   GlobeAltIcon,
   CheckBadgeIcon,
@@ -7,16 +7,17 @@ import {
   CurrencyDollarIcon,
   GlobeEuropeAfricaIcon,
   FireIcon,
+  InformationCircleIcon,
 } from "@heroicons/react/24/outline";
 
 export const Features = [
   {
-    Icon: LinkIcon,
+    Icon: PresentationChartBarIcon,
     title: "Deep Web3 Network",
     text: "We are connected with 60+ ... capital, listings, and exposure.",
   },
   {
-    Icon: BoltIcon,
+    Icon: InformationCircleIcon,
     title: "No Upfront Fees",
     text: "We believe in performance-driven partnerships...",
   },

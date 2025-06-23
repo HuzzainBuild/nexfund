@@ -24,7 +24,7 @@ const Project = () => {
     <section
       ref={scrollref}
       id="project"
-      className="relative w-full px-4 md:px-8 lex items-center justify-center py-[50px] md:py-[80px] h-[120vh] md:h-[200vh]"
+      className="relative w-full px-4 md:px-8 lex items-center justify-center py-[50px] md:py-[80px] min-h-screen md:h-[200vh]"
     >
       <div
         style={{ fixedPosition }}
@@ -50,7 +50,7 @@ const Project = () => {
         </m.h1>
       </div>
 
-      <aside className="sticky top-[30px] md:top-[60px] h-screen flex item-center overflow-hidden">
+      <aside className="sticky top-[30px] md:top-[60px] h-[150vh] flex item-center overflow-hidden bg-amber-400">
         <m.section style={{ x }} className="flex gap-6 md:gap-8 items-center">
           {ProjectsList.map((project, index) => (
             <div
