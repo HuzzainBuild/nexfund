@@ -3,6 +3,10 @@ import {
   BoltIcon,
   GlobeAltIcon,
   CheckBadgeIcon,
+  PresentationChartBarIcon,
+  CurrencyDollarIcon,
+  GlobeEuropeAfricaIcon,
+  FireIcon,
 } from "@heroicons/react/24/outline";
 
 export const Features = [
@@ -161,5 +165,28 @@ export const RatingList = [
       "TPU has optimized our workflows, saving us hours of manual work. The visual interface is intuitive and powerful!",
     name: "Emily Davis",
     role: "Operations Lead",
+  },
+];
+
+export const AnalyticsData = [
+  {
+    Icon: PresentationChartBarIcon,
+    value: 77,
+    label: "Number of Projects",
+  },
+  {
+    Icon: GlobeEuropeAfricaIcon,
+    value: 33,
+    label: "Number of Partners",
+  },
+  {
+    Icon: CurrencyDollarIcon,
+    value: "$196K",
+    label: "Total funding raised",
+  },
+  {
+    Icon: FireIcon,
+    value: 786,
+    label: "Total number of KOLs",
   },
 ];

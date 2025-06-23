@@ -31,22 +31,34 @@ const Launchpad = () => {
         </m.h1>
       </div>
 
-      <m.div
-        variants={slideIn("up", "tween", 0.1, 0.75)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="flex flex-row items-center justify-center gap-4 md:gap-6 max-w-[60rem] mx-auto mt-8 overflow-hidden  whitespace-nowrap "
-      >
-        {Launchpads.map((name, index) => (
-          <h2
-            key={index}
-            className="launchpads cursor-pointer w-full transition"
-          >
-            {name}
-          </h2>
-        ))}
-      </m.div>
+      <div className="flex gap-4 w-full overflow-hidden">
+        <m.div
+          variants={slideIn("up", "tween", 0.1, 0.75)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+          className="flex flex-row items-center justify-center gap-4 md:gap-6 max-w-[60rem] mx-auto mt-8  whitespace-nowrap scroll_slide"
+        >
+          {Launchpads.map((name, index) => (
+            <h2
+              key={index}
+              className="launchpads cursor-pointer w-full transition"
+            >
+              {name}
+            </h2>
+          ))}
+
+          {Launchpads.map((name, index) => (
+            <h2
+              aria-hidden="true"
+              key={index}
+              className="launchpads cursor-pointer w-full transition"
+            >
+              {name}
+            </h2>
+          ))}
+        </m.div>
+      </div>
     </section>
   );
 };

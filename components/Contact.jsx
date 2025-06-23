@@ -98,7 +98,7 @@ const Contact = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         initial="hidden"
-        className="grad-bg  px-8 md:px-[50px]  py-[50px] rounded-xl max-w-[60rem] mx-auto animate_border flex flex-col"
+        className="grad-bg  px-8 md:px-[50px]  py-[50px] rounded-xl max-w-[60rem] mx-auto animate_border flex flex-col border border-gray-800"
       >
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl md:text-4xl font-bold text-center z-5">

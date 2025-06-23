@@ -9,7 +9,7 @@ const More = () => {
   return (
     <section
       id="features"
-      className="relative w-full flex flex-col items-center justify-center py-[30px] md:py-[60px] overflow-x-hidden"
+      className="relative w-full flex flex-col items-center justify-center py-[30px] md:py-[60px] overflow-x-hidden gap-10"
     >
       <div className="flex flex-col gap-4 items-center text-center">
         <m.p
@@ -41,7 +41,7 @@ const More = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               key={idx}
-              className="gradient flex flex-col p-6 rounded-lg shadow-lg border border-gray-500 gap-2"
+              className="grad-bg flex flex-col p-6 rounded-lg shadow-lg border border-gray-800 gap-2"
             >
               <Icon className="w-12 h-12 text-white" />
               <h2 className="font-semibold text-xl">{title}</h2>

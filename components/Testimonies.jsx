@@ -15,7 +15,7 @@ const Testimonies = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="max-w-[50rem]  mx-auto flex flex-col items-center justify-center text-center px-10 py-[60px] md:p-[80px] rounded-lg shadow-lg grad-bg animate_border"
+        className="max-w-[50rem]  mx-auto flex flex-col items-center justify-center text-center px-10 py-[60px] md:p-[80px] rounded-lg shadow-lg grad-bg animate_border border border-gray-800"
       >
         <h1 className="text-3xl md:text-4xl font-bold hero_title z-4">
           Powering Your Web3 Future with{" "}

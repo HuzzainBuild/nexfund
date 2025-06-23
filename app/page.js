@@ -1,5 +1,3 @@
-"use client";
-import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import Partnership from "@/components/Partnership";
 import About from "@/components/About";
@@ -12,16 +10,19 @@ import Launchpad from "@/components/Launchpad";
 import Contact from "@/components/Contact";
 import Rating from "@/components/Rating";
 import Partner from "@/components/Partner";
+import Work from "@/components/Work";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Partnership />
+      {/* <Partnership /> */}
+      <Partner />
       <Launchpad />
       <About />
       <Project />
       <Services />
+      <Work />
       <More />
       <Testimonies />
       <Rating />

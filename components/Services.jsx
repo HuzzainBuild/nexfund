@@ -45,8 +45,8 @@ const Services = () => {
         </m.div>
       </div>
 
-      <aside className="relative w-full flex items-center justify-center max-w-[60rem] mx-auto gap-10 mt-6">
-        <m.div className="w-full flex flex-col items-center gap-6 md:gap-8 mt-10">
+      <aside className="relative w-full flex items-center justify-center max-w-[60rem] mx-auto gap-10 mt-6 z-5">
+        <m.div className="w-full flex flex-col items-center gap-8 md:gap-10 mt-10">
           {servicesData.map((service, index) => (
             <Tilt
               key={index}
@@ -60,7 +60,7 @@ const Services = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
-                className="grad-bg rounded-md h-[550px] md:h-[400px] relative overflow-hidden w-full grid md:grid-cols-2 shadow-xl "
+                className="grad-bg rounded-md h-[600px] md:h-[400px] relative overflow-hidden w-full grid md:grid-cols-2 shadow-xl "
               >
                 <div className="p-10 flex flex-col gap-8 w-full justify-center ">
                   <h1 className="text-3xl md:text-4xl font-bold max-w-lg">
