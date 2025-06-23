@@ -36,11 +36,13 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <Button
-          type={"btn"}
-          title={"Get Started"}
-          className={"hidden md:flex"}
-        />
+        <a href="#contact">
+          <Button
+            type={"btn"}
+            title={"Get Started"}
+            className={"hidden md:flex"}
+          />
+        </a>
 
         <div
           className="md:hidden flex items-center justify-center cursor-pointer"

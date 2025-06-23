@@ -15,20 +15,20 @@ const Testimonies = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="max-w-[50rem]  mx-auto flex flex-col items-center justify-center text-center px-10 py-[60px] md:p-[80px] rounded-lg shadow-lg grad-bg"
+        className="max-w-[50rem]  mx-auto flex flex-col items-center justify-center text-center px-10 py-[60px] md:p-[80px] rounded-lg shadow-lg grad-bg animate_border"
       >
-        <h1 className="text-3xl md:text-4xl font-bold hero_title">
+        <h1 className="text-3xl md:text-4xl font-bold hero_title z-4">
           Powering Your Web3 Future with{" "}
           <span className="gradient_text">
             Capital, Connections, and Credibility.
           </span>
         </h1>
 
-        <p className="mt-4 font-semibold text-gray-300 hero_subtitle max-w-xl">
+        <p className="mt-4 font-semibold text-gray-300 hero_subtitle max-w-xl z-4">
           We connect Web3 startups with capital, OTC deals, and top-tier
           listings through a trusted network
         </p>
-        <div className="mt-6">
+        <div className="mt-6 z-4">
           <Button type={"btn"} title={"Get Started"} />
         </div>
       </m.div>

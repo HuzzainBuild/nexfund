@@ -81,7 +81,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative w-full py-[100px] max-sm:pt-[50px] px-4 overflow-hidden"
+      className="relative w-full py-[100px] max-sm:pt-[50px] px-4 overflow-hidden flex flex-col gap-10"
     >
       <m.h1
         variants={fadeIn("right", "tween", 0.1, 0.75)}
@@ -92,72 +92,75 @@ const Contact = () => {
       >
         CONTACT US
       </m.h1>
+
       <m.div
         variants={fadeIn("left", "tween", 0.1, 0.5)}
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         initial="hidden"
-        className="grad-bg mt-10 py-[50px] px-8 md:px-[50px] rounded-xl max-w-[60rem] mx-auto z-1 "
+        className="grad-bg  px-8 md:px-[50px]  py-[50px] rounded-xl max-w-[60rem] mx-auto animate_border flex flex-col"
       >
-        <h1 className="text-2xl md:text-4xl font-bold text-center">
-          Tell Us About Your Project
-        </h1>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-center z-5">
+            Tell Us About Your Project
+          </h1>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-8 ">
-          <div className="grid gap-6">
-            <Input
-              title={"Full Name"}
-              place={"John Doe"}
-              name={"fullname"}
-              value={form.fullname}
-              handleChange={handleChange}
-            />
-            <Input
-              title={"Project Name"}
-              place={"NexFund Labs"}
-              name={"projectName"}
-              value={form.projectName}
-              handleChange={handleChange}
-            />
-            <Input
-              title={"Email"}
-              place={"example@gmail.com"}
-              name={"email"}
-              value={form.email}
-              handleChange={handleChange}
+          <div className="grid md:grid-cols-2 gap-6 mt-8 z-5">
+            <div className="grid gap-6">
+              <Input
+                title={"Full Name"}
+                place={"John Doe"}
+                name={"fullname"}
+                value={form.fullname}
+                handleChange={handleChange}
+              />
+              <Input
+                title={"Project Name"}
+                place={"NexFund Labs"}
+                name={"projectName"}
+                value={form.projectName}
+                handleChange={handleChange}
+              />
+              <Input
+                title={"Email"}
+                place={"example@gmail.com"}
+                name={"email"}
+                value={form.email}
+                handleChange={handleChange}
+              />
+            </div>
+            <div className="grid gap-6">
+              <Input
+                title={"Website URL"}
+                place={"https://nexfund.io"}
+                name={"websiteUrl"}
+                value={form.websiteUrl}
+                handleChange={handleChange}
+              />
+              <Input
+                title={"Telegram Username"}
+                place={"@nexfund"}
+                name={"telegram"}
+                value={form.telegram}
+                handleChange={handleChange}
+              />
+              <Input
+                title={"Token / Coin Tracker"}
+                place={"Nexfund Labs (NFL)"}
+                name={"token"}
+                value={form.token}
+                handleChange={handleChange}
+              />
+            </div>
+          </div>
+
+          <div className="flex w-full mt-6 z-5">
+            <Button
+              type={"btn"}
+              title={loading ? "Sending..." : "Send"}
+              handleClick={handleSubmit}
             />
           </div>
-          <div className="grid gap-6">
-            <Input
-              title={"Website URL"}
-              place={"https://nexfund.io"}
-              name={"websiteUrl"}
-              value={form.websiteUrl}
-              handleChange={handleChange}
-            />
-            <Input
-              title={"Telegram Username"}
-              place={"@nexfund"}
-              name={"telegram"}
-              value={form.telegram}
-              handleChange={handleChange}
-            />
-            <Input
-              title={"Token / Coin Tracker"}
-              place={"Nexfund Labs (NFL)"}
-              name={"token"}
-              value={form.token}
-              handleChange={handleChange}
-            />
-          </div>
-        </div>
-
-        <div className="mt-6 flex w-full">
-          <Button
-            type={"btn"}
-            title={loading ? "Sending..." : "Send"}
-            handleClick={handleSubmit}
-          />
         </div>
       </m.div>
     </section>

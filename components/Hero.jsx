@@ -68,7 +68,9 @@ const Hero = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Button type={"btn"} title={"Get Started"} />
+          <a href="#conatct">
+            <Button type={"btn"} title={"Get Started"} />
+          </a>
         </m.div>
       </div>
 
