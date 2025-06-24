@@ -35,7 +35,7 @@ const Home = () => {
       <Hero />
       {/* <Partnership /> */}
       <Partner />
-      <Launchpad />
+      {/* <Launchpad /> */}
       <About />
       {/* <Project /> */}
       <Services />

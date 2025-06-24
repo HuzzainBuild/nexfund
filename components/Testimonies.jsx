@@ -29,7 +29,9 @@ const Testimonies = () => {
           listings through a trusted network
         </p>
         <div className="mt-6 z-4">
+          <a href="#contact">
           <Button type={"btn"} title={"Get Started"} />
+          </a>
         </div>
       </m.div>
     </section>

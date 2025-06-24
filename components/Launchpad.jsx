@@ -31,13 +31,13 @@ const Launchpad = () => {
         </m.h1>
       </div>
 
-      <div className="flex gap-4 w-full overflow-hidden">
+      <div className="flex gap-4 w-full overflow-hidden py-8">
         <m.div
           variants={slideIn("up", "tween", 0.1, 0.75)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="flex flex-row items-center justify-center gap-4 md:gap-6 max-w-[60rem] mx-auto mt-8  whitespace-nowrap scroll_slide"
+          className="flex flex-row items-center justify-center gap-6 md:gap-6 max-w-[60rem] mx-auto mt-8  whitespace-nowrap scroll_slide"
         >
           {Launchpads.map((name, index) => (
             <h2
