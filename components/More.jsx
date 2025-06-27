@@ -25,9 +25,9 @@ const More = () => {
       <section
         id="features"
         ref={scrollref}
-        className="relative w-full py-[30px] md:py-[60px] gap-10 h-[400vh] md:h-[350vh] hidden md:block"
+        className="relative w-full py-[30px] md:py-[60px] gap-10 lg:h-[350vh] md:h-[400vh] hidden md:block"
       >
-        <div className="sticky top-[60px] md:top-[100px] flex flex-col  gap-8 items-center overflow-hidden ">
+        <div className="sticky top-[60px] md:top-[100px] flex flex-col gap-8 items-center overflow-hidden ">
           <div className="flex flex-col gap-4 items-center text-center">
             <m.p
               variants={zoomIn(0.1, 0.5)}

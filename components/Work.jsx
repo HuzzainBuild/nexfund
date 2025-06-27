@@ -12,7 +12,7 @@ const Work = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[70rem] w-full">
         {AnalyticsData.map(({ Icon, label, value }, idx) => (
           <m.div
-            variants={slideIn("right", "tween", 0.1 * idx, 0.5)}
+            variants={fadeIn("right", "tween", 0.1 * idx, 0.5)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
