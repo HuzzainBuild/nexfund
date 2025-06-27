@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Button from "@/components/Button";
 
 import { useState } from "react";
@@ -13,9 +14,12 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="w-full fixed top-0 left-0 bg-black/50  py-4 px-4 lg:px-10 xl:px-12 z-100 flex justify-between items-center  border-b-gray-700">
-        <div>
-          <h1 className="font-bold text-2xl md:text-3xl text-white">NexFund</h1>
+      <nav className="w-full fixed top-0 left-0 bg-black/70  py-4 px-4 lg:px-10 xl:px-12 z-100 flex justify-between items-center  border-b-gray-700">
+        <div className="flex gap-3 items-center">
+          <Image src={"/logo-primary.svg"} alt="Logo" width={35} height={35} />
+          <h1 className="font-bold text-2xl text-white hidden md:block">
+            NexFund <span className="font-medium">Labs</span>
+          </h1>
         </div>
 
         <ul className="hidden md:flex gap-5 lg:gap-6 xl:gap-8 item-center  font-medium text-white">

@@ -1,13 +1,21 @@
-import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <section className="relative w-full px-4 md:px-8 bg-black text-white border-t  border-t-gray-600  overflow-hidden pb-6">
       <div className="mt-10 md:mt-15 grid md:grid-cols-2 gap-4 md:gap-8 w-full max-w-[70rem] mx-auto">
         <div className="flex flex-col gap-8 md:gap-10 w-full">
-          <div className="flex flex-col gap-2 w-full">
-            <div className="flex items-center gap-2 w-full">
-              <h2 className="font-bold text-2xl">NexFund Labs</h2>
+          <div className="flex flex-col gap-3 w-full">
+            <div className="flex gap-3 items-center">
+              <Image
+                src={"/logo-primary.svg"}
+                alt="Logo"
+                width={35}
+                height={35}
+              />
+              <h1 className="font-bold text-2xl text-white">
+                NexFund <span className="font-medium">Labs</span>
+              </h1>
             </div>
 
             <p className="font-semibold max-w-md">
@@ -34,11 +42,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white">Links</h3>
             <ul className="mt-4 text-gray-400 flex flex-col gap-1 font-semibold ">
-              <li className="hover:text-white cursor-pointer">Home</li>
-              <li className="hover:text-white cursor-pointer">About</li>
-              <li className="hover:text-white cursor-pointer">Web3 Services</li>
-              <li className="hover:text-white cursor-pointer">Features</li>
-              <li className="hover:text-white cursor-pointer">Contact</li>
+              <li className="hover:text-white cursor-pointer">
+                <a href="#hero">Home</a>
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                <a href="#about">About</a>
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                <a href="#services">Web3 Services</a>
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                <a href="#features">Features</a>
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
           <div>

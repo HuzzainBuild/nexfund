@@ -58,10 +58,7 @@ body {
   top: -15%;
   transform: translateX(-50%);
 
-  background: linear-gradient(
-    rgba(149, 66, 232, 0.35),
-    rgba(45, 37, 158, 0.35)
-  );
+  background: linear-gradient(rgba(66, 132, 232, 0.35), rgba(2, 52, 158, 0.35));
   filter: blur(175px);
   transform: rotate(-114.2deg);
 }
@@ -85,7 +82,7 @@ body {
   right: 2%;
   bottom: 5%;
 
-  background: rgba(91, 45, 152, 0.75);
+  background: rgba(45, 72, 152, 0.75);
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
@@ -154,7 +151,7 @@ img {
 }
 
 .grad-bg {
-  @apply bg-linear-0 from-[#0d090f] from-20% to-[#070618];
+  @apply bg-linear-0 from-[#000a18] from-20% to-[#000a18];
 }
 
 .scroll_slide {
@@ -191,7 +188,7 @@ img {
   content: "";
   position: absolute;
   width: 120%;
-  background-image: linear-gradient(#3772df, #190c91, #7d1692);
+  background-image: linear-gradient(#4382f7, #0c0079, #005281);
   height: 90%;
   animation: rotateAnimate 3s linear infinite;
   transition: all 0.2s linear;
@@ -202,8 +199,8 @@ img {
 .animate_border::after {
   content: "";
   position: absolute;
-  inset: 5px;
-  background-image: linear-gradient(#0d090f, #070618);
+  inset: 1.5px;
+  background-image: linear-gradient(#000a18, #04152c);
   border-radius: 5px;
   z-index: 3;
 }

@@ -46,12 +46,12 @@ const Services = () => {
       </div>
 
       <aside className="relative w-full flex items-center justify-center max-w-[60rem] mx-auto gap-10 mt-6 z-5">
-        <m.div className="w-full flex flex-col items-center gap-8 md:gap-10 mt-10">
+        <m.div className="w-full flex flex-col items-center gap-10 md:gap-10 mt-10">
           {servicesData.map((service, index) => (
             <Tilt
               key={index}
-              tiltMaxAngleX={5}
-              tiltMaxAngleY={5}
+              tiltMaxAngleX={8}
+              tiltMaxAngleY={8}
               scale={0.9}
               transitionSpeed={450}
             >

@@ -38,7 +38,7 @@ const Rating = () => {
         className="flex w-full h-full gap-6 py-2 items-center justify-center"
       >
         <div className="max-w-[60rem] w-full grad-bg h-[280px] relative flex overflow-hidden">
-          <div className="absolute top-0 left-0  w-[200px] md:w-[250px] h-[280px] bg-[#1a1a1a] flex flex-col items-center justify-center gap-2 z-10 shadow-2xl">
+          <div className="absolute top-0 left-0  w-[200px] md:w-[250px] h-[280px] bg-[#0b1620] flex flex-col items-center justify-center gap-2 z-10 shadow-2xl">
             <h1 className="text-6xl font-bold">4.7+</h1>
 
             <div className="flex gap-1 items-center ">
