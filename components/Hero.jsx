@@ -16,24 +16,6 @@ const Hero = () => {
     >
       <CanvasVideo videoSrc="/videos/galaxy.mp4" className="-z-1" />
 
-      {/* <section className="absolute top-0 left-0 w-full h-screen inset-0 flex items-center justify-center z-0">
-        <div className="max-w-[500px] max-h-[500px]">
-          <Image
-            src={"/outorbit.png"}
-            alt="Out Orbit"
-            width={450}
-            height={400}
-            className="orbit_out absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blend-luminosity"
-          />
-          <Image
-            src={"/innerobit.png"}
-            alt="Inener Orbit"
-            width={350}
-            height={300}
-            className="orbit_in absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blend-luminosity"
-          />
-        </div>
-      </section> */}
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col gap-4 bg-transparent">
         <m.h1
@@ -68,7 +50,7 @@ const Hero = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <a href="#conatct">
+          <a href="#contact">
             <Button type={"btn"} title={"Get Started"} />
           </a>
         </m.div>
