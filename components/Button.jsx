@@ -1,10 +1,11 @@
 import Link from "next/link";
 
-const Button = ({ type, title, href, className, handleClick }) => {
+const Button = ({ type, title, href, className, handleClick, disabled }) => {
   if ((type = "btn")) {
     return (
       <button
         onClick={handleClick}
+        disabled={disabled}
         className={`gradient_bg text-white font-semibold hover:bg-purple-900 py-3 px-5 ${className} rounded-md`}
       >
         <span>{title}</span>

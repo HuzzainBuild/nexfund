@@ -43,6 +43,13 @@ const Contact = () => {
       projectName: form.projectName,
     });
 
+    const checkEmail = form.email.includes("@") && form.email.includes(".");
+    if (!checkEmail) {
+      alert("Please enter a valid email address.");
+      setLoading(false);
+      return;
+    }
+
     try {
       emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,

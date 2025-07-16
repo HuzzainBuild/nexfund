@@ -9,7 +9,7 @@ body {
 }
 
 .nav_links {
-  @apply cursor-pointer font-semibold text-gray-400 hover:text-white transition duration-700 text-[20px];
+  @apply cursor-pointer font-semibold text-gray-400 hover:text-white transition duration-700;
 }
 
 .gradient-01 {
